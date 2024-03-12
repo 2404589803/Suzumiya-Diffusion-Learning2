@@ -10,7 +10,7 @@ def detect_face(image_path):
     # 读取输入的图像
     image = cv2.imread(image_path)
     if image is None:
-        print("无法读取图像，请检查图像路径!！")
+        print("无法读取图像，请检查图像路径！")
         return None, None
 
     # 转换图像为RGB格式（MediaPipe人脸检测器要求输入为RGB图像）
